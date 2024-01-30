@@ -37,7 +37,7 @@ jobs:
           token: ${{ secrets.TELEGRAM_TOKEN }}
           format: markdown
           message: |
-            ${{steps.ke5p.outputs.MSG}}
+            ${{steps.pow.outputs.MSG}}
       
       - name: Commit
         run: |
