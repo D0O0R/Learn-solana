@@ -18,7 +18,8 @@ jobs:
         run: |
           ./t.sh
           TIME=$(TZ=Asia/Shanghai date "+%Y-%m-%d %H:%M")
-          echo "$TIME" | cat - time.log > temp && mv temp time.log
+          echo "$TIME" | cat - time.log > temp
+          mv temp time.log
           {
             echo "MSG<<EOF" >> $GITHUB_OUTPUT
             echo "Pow success 🎉"
