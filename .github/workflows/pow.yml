@@ -9,7 +9,7 @@ jobs:
   live:
     strategy:
       matrix:
-        pow: [1, 2, 3, 4]
+        pow: [1, 2, 3, 4, 5]
         version: [1, 2, 3]
     runs-on: ubuntu-latest  
     steps:
