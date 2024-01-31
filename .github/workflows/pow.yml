@@ -2,15 +2,15 @@ name: Pow
 
 on:
   schedule:
-    - cron: "0 */3 * * *"
+    - cron: "0 */4 * * *"
   workflow_dispatch:
 
 jobs:
   live:
     strategy:
       matrix:
-        pow: [1, 2, 3, 4, 5]
-        version: [1, 2, 3, 4, 5]
+        pow: [1, 2, 3, 4]
+        version: [1, 2, 3]
     runs-on: ubuntu-latest  
     steps:
       - name: Checkout
